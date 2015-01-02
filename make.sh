@@ -1,7 +1,8 @@
 #!/bin/bash
-OUTPUT=$(pwd)/index.html
+DIR=$(pwd)
+OUTPUT=$DIR/index.html
 HTML="<!DOCTYPE html><html lang=\"en\"><head><title>random</title><meta charset=\"utf-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"description\" content=\"random images\"><meta name=\"author\" content=\"xero harrison\"><style type=\"text/css\">body {background:#222;color:#ccc;padding:10px;font-size:8pt;font-family:Monaco, Consolas, \"Lucida Console\", monospace}h1 {margin:2px;color:#eee;padding-bottom:10px;border-bottom:4px solid #000}ul {list-style-type:none;padding:0;margin:0}li {display:block;margin:0;padding:5px}li:hover {background:#272822}a {color:#6A8C8C;text-decoration:none;margin-right:10px;font-size:15pt}a:hover {color:#93BBBB} @media only screen and (min-width:641px) {body{font-size:12pt}a {font-size:25pt}}</style></head><body><h1>0.xero.nu</h1><ul>"
-for FILE in "$search_dir"/srv/http/0/*
+for FILE in "$DIR"/*
 do
 	EXT=$(awk -F'.' '{print $NF}' <<< $FILE)
 	if [ $EXT = "gif"  ] || [ $EXT = "jpg"  ] || [ $EXT = "jpeg"  ] || [ $EXT = "png"  ] ; then
