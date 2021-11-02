@@ -9,6 +9,6 @@
  ░░░     ░░░░░░░░ ░░░   ░░  ░░░░░░  ░░░░░░  ░░░  ░░  ░░ ░░ 
 ```
 
-http://0.xxe.ro
+https://0.xxe.ro
 
-   a bunch of images i like to post all over the internets
+a bunch of images i like to post all over the internets
